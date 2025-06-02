@@ -1,0 +1,204 @@
+I will give you a job application description and a latex resume. I want you to modify the resume to better appeal to the job. Give me the full resume, dont have places like "%... existing code"
+
+
+job description:
+
+
+
+__
+
+Resume: 
+
+
+% !TeX program = xelatex
+\documentclass{my_cv}
+\title{Resume}
+\author{Muhammad Bin Fayyaz}
+\date{December 2024}
+\usepackage[a4paper, left=2em, right=2em, top=2.5em, bottom=0em]{geometry}
+\usepackage{multicol}
+\setlength{\columnsep}{0cm}
+\usepackage{xcolor}
+\usepackage{fontspec}
+\usepackage{setspace}
+\usepackage{lipsum}
+\usepackage[none]{hyphenat}
+\usepackage{changepage}
+\usepackage{hyperref}
+
+\defaultfontfeatures{LetterSpace=2.5}
+
+\hypersetup{
+    unicode=true,
+    colorlinks=true,
+    urlcolor=white,
+    linkcolor=white,
+}
+
+\setmainfont{ArialMT}[
+    Path=./fonts/,
+    Extension = .ttf,
+    UprightFont=*-Light,
+    BoldFont=*-Medium,
+    ItalicFont=*-Italic,
+    ItalicFeatures={
+        SmallCapsFont=*-Italic,
+    },
+    BoldFeatures={
+        SmallCapsFont=*-Medium,  
+    },
+    SmallCapsFont=*-Medium,
+    ]
+
+\begin{document}
+
+\begin{multicols}{3}
+    \headerSection{\badge{flashyGreen}{\Large {\textbf{\textcolor{black}{Fullstack Engineer and Cloud Developer}}}}}
+\end{multicols}
+
+\begin{multicols}{2}
+    \headerSection{\Huge \textbf{Muhammad Bin \newline Fayyaz}}
+    \cvParagraph{\textcolor{black}{\href{tel:+923014569059}{+92 301 4569059}} \newline \textcolor{black}{\href{mailto:muhammadpen@gmail.com}{muhammadpen@gmail.com}} \newline \textcolor{black}{\href{https://github.com/MuhammadPen}{github.com/MuhammadPen}} \newline \textcolor{black}{\href{https://www.linkedin.com/in/muhammad-fayyaz-35a598125/}{linkedin.com/in/muhammad-fayyaz}}}
+
+    \columnbreak
+    \begin{spacing}{1.5}
+        Experienced Fullstack Engineer and Cloud Developer with expertise in AI-powered applications, modern web technologies, and cloud infrastructure. Proficient in React, Node.js, AWS services, and various databases. Demonstrated ability to work on complex projects from conception to deployment, with a strong background in both frontend and backend development. Passionate about leveraging cutting-edge technologies to build scalable and efficient solutions.
+    \end{spacing}
+\end{multicols}
+
+\vspace{1em}
+\setlength{\columnsep}{1cm}
+
+\cvSection{Experience}
+\begin{adjustwidth}{2em}{0em}
+
+\positionAndCompanyLine{Senior Software Engineer}{Z2A Tech}{January 2020 - Present}
+\project{Multiple javascript, aws, node projects}{development and maintenance}
+\begin{flushleft}{\badge{lavenderBlue}{Responsibilities}}\end{flushleft}
+\begin{itemize}
+    \item Working as a Senior Engineer on multiple javascript, aws, node projects
+    \item Architecture design and implementation
+    \item Team collaboration and code review
+    \item Performance optimization and scalability improvements
+\end{itemize}
+\techStackList{JavaScript, AWS, Node.js, React, Cloud Architecture}
+\vspace{0.5em}
+
+\positionAndCompanyLine{Fullstack Engineer}{1Mind}{October 2024 - April 2025}
+\project{AI powered applications}{development and maintenance}
+\begin{flushleft}{\badge{lavenderBlue}{Responsibilities}}\end{flushleft}
+\begin{itemize}
+    \item Working as a Fullstack Engineer on AI powered applications
+    \item Full-stack development and system architecture
+    \item Integration of AI/ML capabilities into web applications
+\end{itemize}
+\techStackList{React, Node.js, AWS, AI/ML technologies}
+\vspace{0.5em}
+
+\positionAndCompanyLine{Fullstack Engineer}{The AI Foundation}{October 2023 - October 2024}
+\project{AI powered applications}{development and maintenance}
+\begin{flushleft}{\badge{lavenderBlue}{Responsibilities}}\end{flushleft}
+\begin{itemize}
+    \item Working as a Fullstack Engineer on AI powered applications
+    \item The AI Foundation has rebranded to "1Mind"
+    \item Development of scalable AI-driven solutions
+    \item Frontend and backend development
+\end{itemize}
+\techStackList{React, Node.js, AWS, AI/ML frameworks, Cloud services}
+\vspace{0.5em}
+
+
+\positionAndCompanyLine{Software Engineer}{Menace Studio}{January 2019 - December 2019}
+\project{Unity, javascript, nodejs projects}{development and maintenance}
+\begin{flushleft}{\badge{lavenderBlue}{Responsibilities}}\end{flushleft}
+\begin{itemize}
+    \item Worked as a Software Engineer on Unity, javascript, nodejs projects
+    \item Game development using Unity engine
+    \item Web application development
+    \item Cross-platform development
+\end{itemize}
+\techStackList{Unity, JavaScript, Node.js, C\#}
+\vspace{0.5em}
+
+\positionAndCompanyLine{Software Engineer}{Alsyke}{February 2018 - January 2019}
+\project{Javascript, React, Vue projects}{development and maintenance}
+\begin{flushleft}{\badge{lavenderBlue}{Responsibilities}}\end{flushleft}
+\begin{itemize}
+    \item Worked as a Software Engineer on multiple Javascript, React, Vue projects
+    \item Frontend development with modern frameworks
+    \item Component-based architecture implementation
+    \item User interface design and development
+\end{itemize}
+\techStackList{JavaScript, React, Vue.js, HTML5, CSS3}
+
+\end{adjustwidth}
+
+\vspace{1em}
+
+\cvSection{Projects}
+\begin{adjustwidth}{2em}{0em}
+
+\positionAndCompanyLine{1mind}{Custom AI agents}{\textcolor{blue}{\href{https://1mind.org/}{https://1mind.org/}}}
+\begin{itemize}
+    \item AWS, GCP, Nodejs, Docker, Kubernetes, React
+\end{itemize}
+\vspace{0.3em}
+
+\positionAndCompanyLine{Peaque}{Social Reading platform}{\textcolor{blue}{\href{https://peaque.io/}{https://peaque.io/}}}
+\begin{itemize}
+    \item GCP firebase, cloud functions, React js, redux, styled components, MUI
+\end{itemize}
+\vspace{0.3em}
+
+\positionAndCompanyLine{Fairyhomes}{Real estate search}{\textcolor{blue}{\href{https://fairyhomes.ae/}{https://fairyhomes.ae/}}}
+\begin{itemize}
+    \item AWS amplify, Cognito, S3, elastic Search, Reactjs, Styled Components and MUI
+\end{itemize}
+\vspace{0.3em}
+
+\positionAndCompanyLine{Shipa IO: App Definition Builder}{Cloud infrastructure builder}{\textcolor{blue}{\href{https://shipa.io/}{https://shipa.io/}}}
+\begin{itemize}
+    \item Reactjs, dnd-kit, REST APIs, Ant design, tailwind CSS, JSON
+\end{itemize}
+\vspace{0.3em}
+
+\positionAndCompanyLine{Money.net: ChartIQ}{Stocks charting}{\textcolor{blue}{\href{https://www.money.net/}{https://www.money.net/}}}
+\begin{itemize}
+    \item ChartIQ, Reactjs, REST APIs, Webpack, Babel
+\end{itemize}
+\vspace{0.3em}
+
+\positionAndCompanyLine{Fork Careers}{Career guidance and pathways}{\textcolor{blue}{\href{https://www.forkcareers.com}{https://www.forkcareers.com}}}
+\begin{itemize}
+    \item Node.js, Apollo, Graphql, Danfo.js, mySQL, DatoCMS, Reactjs
+\end{itemize}
+
+\end{adjustwidth}
+
+\vspace{1em}
+
+\begin{multicols}{2}
+    \cvSection{Skills}
+    \begin{adjustwidth}{1em}{0em}
+    \textbf{Frontend:} React js, React Native, Vue.js, Electron, NEXT.js, NUXT.js
+    \newline\newline
+    \textbf{Cloud and Backend:} AWS (Lambda, Cognito, S3, Amplify, Dynamodb, RDS), GCP, Pulumi, Serverless, Node.js, Express.js, Fastify
+    \newline\newline
+    \textbf{Databases:} Postgresql, MySQL, DynamDB, graph databases, firestore
+    \newline\newline
+    \textbf{Other Tools:} Docker, Graphql, Apollo server
+    \newline\newline
+    \textbf{Testing:} Jest, Cypress, Cucumber
+    \newline\newline
+    \textbf{Project Management:} Git, Jira, Agile, Monorepos
+    \end{adjustwidth}
+    
+    \columnbreak
+    
+    \cvSection{Languages}
+    \begin{adjustwidth}{1em}{0em}
+    English: Professional proficiency
+    \end{adjustwidth}
+\end{multicols}
+
+\end{document}
